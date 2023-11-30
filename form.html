@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="underline-by-gradient">
+            Using CSS to Style an HTML5 &amp; JavaScript Form Validation
+        </h1>
+        <form id="form1" action="/notExistURL">
+            <div class="form-row">
+                <label for="firstname">
+                    First Name
+                    <input type="text" id="firstname" name="firstname" placeholder="Your first name..." required>
+                </label>
+                <small class="message">error</small>
+            </div>
+            <div class="form-row">
+                <label for="lastname">
+                    Last Name
+                    <input type="text" id="lastname" name="lastname" placeholder="Your last name..." required>
+                </label>
+                <small class="message">error</small>
+            </div>
+            <div class="form-row">
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="email" placeholder="Your email..." required>
+                </label>
+                <small class="message">error</small>
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="box-animation">How magical CSS3 is!</div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
